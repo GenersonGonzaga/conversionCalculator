@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Length Converter</title>
+
+<body>
+    <h2>Length Converter</h2>
+<p>Type a value in the Inches field to convert the value:</p>
+
+<p>
+  <label>Inches</label>
+  <input id="inputInches" type="number" placeholder="Inches" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meter: <span id="outputMeters"></span></p>
+<p>Centimeter: <span id="outputCentimeter"></span></p>
+<p>Millimeter: <span id="outputMillimeter"></span></p>
+
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/39.370;
+  document.getElementById("outputCentimeter").innerHTML=valNum/0.39370;
+  document.getElementById("outputMillimeter").innerHTML=valNum*25.4;
+}
+</script>
+</body>
+</html>
+
+
+</body>
+
+</html>
